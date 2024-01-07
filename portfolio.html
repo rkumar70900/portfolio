@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    html {
+    scroll-behavior: smooth;
+  }
+
+body {
+  background-color: #fff; /* Set the background color of the entire website to white */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header, section{
+  padding: 20px; /* Add padding to sections for better readability */
+}
+#top-bar {
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+nav {
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+nav a:hover, nav a:active {
+  background-color: #555;
+}
+section {
+  padding: 0 20px;
+}
+h1, h2, h3 {
+  color: #333;
+}
+p {
+  color: #555;
+}
+
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height to the full viewport height */
+  border: 1px solid black;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.intro-text {
+  flex: 1;
+  font-weight: bold;
+  margin-bottom: 3%;
+  font-size: 65px; /* Adjust the font size of the heading */
+  font-family: 'Afacad', sans-serif;
+}
+
+.intro-text p {
+  margin: 2% 0; /* Adjust the margin to control the space between paragraphs */
+  color: #FFA552;
+}
+
+.intro-subtext {
+  font-size: 12px;
+  color: grey;
+}
+
+  #background, #areas {
+    background-color: #BAFFDF; /* Set your background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Apply box shadow for hovering effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+    margin: 0 auto; /* Center the section */
+    width: 90%; /* Set the initial width of the section */
+  }
+  
+  #background:hover,  #areas:hover {
+    transform: translateY(-5px); /* Move the box slightly upward on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Adjust box shadow on hover */
+  }
+  
+
+
+#areas-of-interest, #projects, #background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#all-interests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .interests-subtext{
+    font-size: 12px;
+    color: grey;
+  }
+  
+  .top-container, .bottom-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px; /* Adjust spacing as needed */
+  }
+  
+  .interests {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+  }
+
+  .project img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    max-height: 100%;
+  }
+  
+  .project a {
+    margin: 10%; /* Add some spacing between the image and the link */
+  }
+  
+  .project-description {
+    margin-top: 10px; /* Add some spacing between the link and the description */
+  }
+  
+
+.project-navigation img{
+    size: 5px;
+}
+
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  text-align: center; /* Align text in the center */
+}
+
+.top-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.experience {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  text-align: center; /* Align text in the center */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  text-align: center; /* Align text in the center */
+}
+
+.exp img {
+  width: 100px;
+  height: 100px;
+}
+
+.whatis {
+  font-size: 15px;
+}
+
+.whatin {
+  font-size: 12px;
+}
+
+.timeat {
+  font-size: 10px;
+}
+
+.the-line{
+  width: 250px;
+  height: 2px;
+  background: red;
+  margin: 2%;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto; /* Center the section */
+  width: 93%;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333; /* Line color */
+}
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    margin: 5px;
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+
+    <header>
+        <div id="top-bar">
+        <div>
+          <img src="your-icon.png" alt="Your Icon" width="30" height="30">
+          <span>Rajesh Kumar Bandaru</span>
+        </div>
+        <nav>
+          <a href="#intro">Intro</a>
+          <a href="#background">Background</a>
+          <a href="#projects">Projects</a>
+          <a href="#areas">Areas of Interest</a>
+        </nav>
+      </div>
+    
+      </header>
+
+  <section id="intro">
+    <div class="intro-content">
+      <div class="intro-text">
+      <p>I'm Rajesh Kumar, a </p>
+      <p>Data Analyst who loves to </p>
+      <p>innovate.</p>
+    </div>
+    </div>
+  </section>
+
+  <section id="background">
+    <h2>Background</h2>
+    <div class="experience">
+      <div class="exp">
+        <img src="./assets/icons/Kalderos_K_Black.png" alt="kalderos" />
+        <div class="whereat">Kalderos</div>
+        <div class="the-line"></div>
+        <div class="whatis">Full Time</div>
+        <div class="whatin">Senior Data Analyst</div>
+        <div class="timeat">Sep 2021 - Present</div>
+      </div>
+      <div class="exp">
+        <img src="./assets/icons/illinois_tech.png" alt="Mindcurrent" />
+        <div class="whereat">Mindcurrent</div>
+        <div class="the-line"></div>
+        <div class="whatis">Part Time</div>
+        <div class="whatin">Data Science Intern</div>
+        <div class="timeat">Jul 2021 - Sep 2021</div>
+      </div>
+      <div class="exp">
+        <img src="./assets/icons/mincurrent.png" alt="Illinois Institute of Technology" />
+        <div class="whereat">Illinois Institute of Technology</div>
+        <div class="the-line"></div>
+        <div class="whatis">Masters</div>
+        <div class="whatin">Computer Science</div>
+        <div class="timeat">Aug 2019 - May 2021</div>
+      </div>
+      <div class="exp">
+        <img src="./assets/icons/mincurrent.png" alt="Sathyabama Institute of Science and Technology" />
+        <div class="whereat">Sathyabama Institute of Science and Technology</div>
+        <div class="the-line"></div>
+        <div class="whatis">Bachelors</div>
+        <div class="whatin">Electronics and Communication Engineering</div>
+        <div class="timeat">Aug 2015 - May 2019</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <!-- Add your projects content here -->
+    <div class="top-projects">
+        <div class="project-navigation">
+            <div id="prevBtn" onclick="changeProject(-1)">
+            <img src="./assets/icons/left-arrow.png" />
+            </div>
+          </div>
+    <div class="project"> 
+      <img src="./assets/images/project1.png" alt="ToDo Application" />
+      <a href="https://github.com/rkumar70900/Electronic_Vendor_Database">ToDo Application 1</a>
+      <div class="project-description">Constructed a database containing information of products, customers, stores, and warehouses utilizing SQL</div>
+    </div>
+    <div class="project"> 
+      <img src="./assets/images/project1.png"  alt="ToDo Application" />
+      <a href="https://github.com/rkumar70900/Electronic_Vendor_Database">ToDo Application 2</a>
+      <div class="project-description">Constructed a database containing information of products, customers, stores, and warehouses utilizing SQL</div>
+    </div>
+    <div class="project"> 
+      <img src="./assets/images/project1.png"  alt="ToDo Application" />
+      <a href="https://github.com/rkumar70900/Electronic_Vendor_Database">ToDo Application 3</a>
+      <div class="project-description">Constructed a database containing information of products, customers, stores, and warehouses utilizing SQL</div>
+    </div>
+    <div class="project"> 
+      <img src="./assets/images/project1.png"  alt="ToDo Application" />
+      <a href="https://github.com/rkumar70900/Electronic_Vendor_Database">ToDo Application 4</a>
+      <div class="project-description">Constructed a database containing information of products, customers, stores, and warehouses utilizing SQL</div>
+    </div>
+    <div class="project"> 
+      <img src="./assets/images/project1.png"  alt="ToDo Application" />
+      <a href="https://github.com/rkumar70900/Electronic_Vendor_Database">ToDo Application 5</a>
+      <div class="project-description">Constructed a database containing information of products, customers, stores, and warehouses utilizing SQL</div>
+    </div>
+    <div class="project-navigation">
+        <div id="nextBtn" onclick="changeProject(1)">
+          <img src="./assets/icons/right-arrow.png" />
+        </div>
+      </div> 
+    </div>
+  </section>
+
+  
+
+  <section id="areas">
+    <!-- Add your areas of interest content here -->
+    <div id="areas-of-interest">
+      <div id="areas-of-interest-heading">
+      <h1>Areas of interest</h1>
+      </div>
+      <div id="areas-of-interest-subtext">
+      Here are some of the things I love working on
+      </div>
+      <div id="all-interests">
+      <div class='top-container'>
+      <div class="interests">
+      <img src="./assets/icons/sql.png" alt="SQL ICON" /> 
+      <h3>SQL</h3>
+      <div class='interests-subtext'>Crafted intricate stored procedures encompassing sophisticated transformations applied to raw source data, ensuring the preservation of data consistency and accuracy, ultimately leading to enhanced insights.</div>
+      </div>
+      <div class="interests">
+      <img src="./assets/icons/python.png" alt="PYTHON ICON" /> 
+      <h3>Python</h3>
+      <div class='interests-subtext'>Created and upheld automated systems for the efficient extraction of data from diverse sources, yielding substantial time savings and heightened operational efficiency in the data retrieval process.</div>
+      </div>
+      <div class="interests">
+      <img src="./assets/icons/machinelearning.png" alt="ML ICON" /> 
+      <h3>Machine learning</h3>
+      <div class='interests-subtext'>Utilized machine learning methods and natural language processing (NLP) to assess the sentiment of movie reviews and developed a web application for a hybrid recommender system.</div>
+      </div>
+      </div>
+      <div class='bottom-container'>
+      <div class="interests">
+      <img src="./assets/icons/fapi.png" alt="API ICON" /> 
+      <h3>fastapi</h3>
+      <div class='interests-subtext'>Engineered a web-based To-Do application using FastAPI, integrating JWT for secure authentication during the login process.</div>
+      </div>
+      <div class="interests">
+      <img src="./assets/icons/databases.png" alt="DATABASE ICON" /> 
+      <h3>Databases</h3>
+      <div class='interests-subtext'>Extensive experience handling a variety of database types, including both relational and NoSQL databases using Azure Data Studio and MySQL Workbench</div>
+      </div>
+      <div class="interests">
+      <img src="./assets/icons/dataanalytics.png" alt="DA ICON" /> 
+      <h3>Data Analytics</h3>
+      <div class='interests-subtext'>Constructed data pipelines employing Azure Data Factory for batch data and Amazon Kinesis with Lambda functions for real-time streaming data. Implemented scheduled runs for these pipelines and harnessed QuickSight and Tableau for data visualization</div>
+      </div>
+      </div>
+      </div>
+  </div>
+  </section>
+
+  <footer>
+    <hr style="width: 95%;">
+    <div class="contact-details">
+      <p>GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
+      <p>Email: your.email@example.com</p>
+      <p>Phone: +1234567890</p>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript for immediate scrolling and active link highlighting
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const targetSectionId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetSectionId);
+  
+        if (targetSection) {
+          window.scrollTo({
+            top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
+            behavior: 'smooth'
+          });
+  
+          // Highlight the active link
+          document.querySelectorAll('nav a').forEach(link => {
+            link.classList.remove('active');
+          });
+          this.classList.add('active');
+        }
+      });
+    });
+  
+    let currentProjectIndex = 0;
+  
+    function showProjects(index) {
+      const projects = document.querySelectorAll('.project');
+      for (let i = 0; i < projects.length; i++) {
+        projects[i].style.display = 'none';
+      }
+  
+      for (let i = index; i < index + 3; i++) {
+        if (projects[i]) {
+          projects[i].style.display = 'block';
+        }
+      }
+    }
+  
+    function changeProject(n) {
+      const projects = document.querySelectorAll('.project');
+      const maxIndex = projects.length - 3; // Maximum index to show three projects
+  
+      currentProjectIndex += n;
+  
+      if (currentProjectIndex < 0) {
+        currentProjectIndex = 0;
+      } else if (currentProjectIndex > maxIndex) {
+        currentProjectIndex = maxIndex;
+      }
+  
+      showProjects(currentProjectIndex);
+    }
+  
+    // Show the initial projects
+    showProjects(currentProjectIndex);
+  </script>
+  
+
+</body>
+</html>
