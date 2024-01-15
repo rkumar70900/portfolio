@@ -1,0 +1,283 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+  background-color: #18222b; /* Set the background color of the entire website to white */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header, section{
+  padding: 20px; /* Add padding to sections for better readability */
+}
+#top-bar {
+  backdrop-filter: blur(10px); /* Apply a blur effect to create a glass-like look */
+  -webkit-backdrop-filter: blur(10px); /* For compatibility with some browsers */
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+nav {
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+  color: #d4c2ac;
+  padding: 10px;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+nav a:hover, nav a:active {
+  background-color: #555;
+  border-radius: 8px;
+}
+section {
+  padding: 0 20px;
+}
+h1, h2, h3 {
+  color: #333;
+}
+p {
+  color: #555;
+}
+
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height to the full viewport height */
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.intro-text {
+  flex: 1;
+  font-weight: bold;
+  margin-bottom: 3%;
+  font-size: 65px; /* Adjust the font size of the heading */
+  font-family: 'Afacad', sans-serif;
+}
+
+.intro-text p {
+  margin: 2% 0; /* Adjust the margin to control the space between paragraphs */
+  color: #e3d6c3;
+}
+
+.intro-subtext {
+  font-size: 12px;
+  color: grey;
+}
+
+  #background, #areas {
+    background-color: #CAD2C5; /* Set your background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Apply box shadow for hovering effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+    margin: 0 auto; /* Center the section */
+    width: 90%; /* Set the initial width of the section */
+  }
+  
+  #background:hover,  #areas:hover {
+    transform: translateY(-5px); /* Move the box slightly upward on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Adjust box shadow on hover */
+  }
+  
+
+
+#areas-of-interest, #projects, #background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#all-interests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .interests-subtext{
+    font-size: 12px;
+    color: black;
+  }
+  
+  .top-container, .bottom-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px; /* Adjust spacing as needed */
+  }
+  
+  .interests {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+  }
+
+  .project img {
+  width: 85%; /* Set a fixed width */
+  height: 85%; /* Set a fixed height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+  
+  .project a {
+    margin: 10%; /* Add some spacing between the image and the link */
+  }
+  
+  .project-description {
+    margin-top: 10px; /* Add some spacing between the link and the description */
+  }
+  
+
+.project-navigation img{
+    size: 5px;
+}
+
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  text-align: center; /* Align text in the center */
+}
+
+.top-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience {
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  .experience {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+    align-items: center; /* Center the items along the cross-axis */
+  }
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  text-align: center; /* Align text in the center */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  text-align: center; /* Align text in the center */
+}
+
+.exp img {
+  width: 100px;
+  height: 100px;
+}
+
+.whatis {
+  font-size: 15px;
+}
+
+.whatin {
+  font-size: 12px;
+}
+
+.timeat {
+  font-size: 10px;
+}
+
+.the-line{
+  width: 250px;
+  height: 2px;
+  background: red;
+  margin: 2%;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto; /* Center the section */
+  width: 93%;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333; /* Line color */
+}
+
+#new-back {
+  background-image: url(./assets/images/dark-geometric-background-with-copy-space.jpg);
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image within the container */
+  height: 100vh; /* 100% of the viewport height */
+  width: 100%; /* 100% of the container width */
+}
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    margin: 5px;
+  }
+}
