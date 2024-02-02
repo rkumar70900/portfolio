@@ -3,55 +3,51 @@ html {
   }
 
 body {
-  background-color: #18222b; /* Set the background color of the entire website to white */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-    scroll-behavior: smooth;
+  background-image: url('./assets/bg.jpg');
+  background-size: cover; /* Adjust the background size as needed */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fixed background scrolling */
+  margin: 0; /* Remove default margin to cover the entire viewport */
+  padding: 0; /* Remove default padding */
 }
 
 header, section{
   padding: 20px; /* Add padding to sections for better readability */
 }
+
 #top-bar {
-  backdrop-filter: blur(10px); /* Apply a blur effect to create a glass-like look */
-  -webkit-backdrop-filter: blur(10px); /* For compatibility with some browsers */
-  color: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
   position: fixed;
-  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   z-index: 1000;
-  width: 95%;
-  margin: 0 auto;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
+
 nav {
   display: flex;
 }
-nav a {
+
+nav a, nav div {
   text-decoration: none;
-  color: #d4c2ac;
-  padding: 10px;
-  margin: 0 10px;
-  transition: background-color 0.3s;
+  color: white;
+  padding: 5px;
 }
-nav a:hover, nav a:active {
-  background-color: #555;
-  border-radius: 8px;
-}
+
 section {
   padding: 0 20px;
 }
 h1, h2, h3 {
-  color: #333;
+  color: #B0A695;
 }
 p {
-  color: #555;
+  color: #48A6C0;
 }
-
 
 #intro {
   display: flex;
@@ -85,7 +81,7 @@ p {
 
 .intro-text p {
   margin: 2% 0; /* Adjust the margin to control the space between paragraphs */
-  color: #e3d6c3;
+  color: #776B5D;
 }
 
 .intro-subtext {
@@ -94,7 +90,7 @@ p {
 }
 
   #background, #areas {
-    background-color: #CAD2C5; /* Set your background color */
+    background-color: #418da6; /* Set your background color */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Apply box shadow for hovering effect */
@@ -156,6 +152,7 @@ p {
   
   .project-description {
     margin-top: 10px; /* Add some spacing between the link and the description */
+    color: #48A6C0;
   }
   
 
@@ -263,7 +260,8 @@ hr {
 }
 
 #new-back {
-  background-image: url(./assets/images/dark-geometric-background-with-copy-space.jpg);
+  background: black;
+  /* background-color: #040D12; */
   background-size: cover; /* Cover the entire container */
   background-position: center; /* Center the image within the container */
   height: 100vh; /* 100% of the viewport height */
